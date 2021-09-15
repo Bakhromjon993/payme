@@ -11,7 +11,14 @@ module.exports = {
       '2xl': ['100px','100%'],
     },
     colors: {
+      grey: {
+        400: '#F8F8F8',
+      },
+      white: {
+        400: '#ffffff'
+      },
       blue: {
+        200: '#D7FCFF',
         400: '#25A4AD'
       },
       black: {
@@ -19,6 +26,12 @@ module.exports = {
       },
       yellow: {
         400: '#FFC229'
+      },
+      brown: {
+        300: '#DEBBAF'
+      },
+      green: {
+        300: '#45EC9C'
       }
     }
   },
