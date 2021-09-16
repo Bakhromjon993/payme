@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <button class="border border-blue-400 text-blue-400 py-3 px-10">
+    <button class="hover:bg-blue-400 hover:text-white-400 border border-blue-400 text-blue-400 py-3 px-10">
       Explore All
     </button>
   </div>

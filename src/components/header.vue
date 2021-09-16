@@ -38,7 +38,7 @@
       <button class="py-6 px-4 font-medium text-l">
         Sign in
       </button>
-      <button class="px-9 py-2 border border-blue-400 text-blue-400 font-medium">
+      <button class="px-9 py-2 border border-blue-400 text-blue-400 font-medium hover:bg-blue-400 hover:text-white-400">
         Sign up
       </button>
     </div>
