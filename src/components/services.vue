@@ -106,7 +106,7 @@
 
 <script>
 export default {
-  name: "Servises"
+  name: "Services"
 };
 </script>
 

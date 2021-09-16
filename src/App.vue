@@ -2,10 +2,8 @@
 import Header from "./components/header.vue";
 import Items from "./components/items.vue";
 import Partners from "./components/partners.vue";
-import Servises from "./components/servises.vue";
-import Feautures from "./components/feautures.vue";
 export default {
-  components: { Feautures, Servises, Partners, Items, Header }
+  components: {Partners, Items, Header }
 };
 </script>
 
@@ -13,6 +11,4 @@ export default {
   <items />
   <Header />
   <partners />
-  <servises />
-  <feautures />
 </template>

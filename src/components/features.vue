@@ -68,7 +68,7 @@
 
 <script>
 export default {
-  name: "Feautures"
+  name: "Features"
 };
 </script>
 
