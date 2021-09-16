@@ -13,62 +13,92 @@
           as.
         </div>
       </div>
-      <div class="flex">
-        <div
-          class="active:bg-white-400 hover:bg-white-400 hover:text-blue-400 hover:border-0 border border-grey-450 flex justify-center items-center flex-col py-12 px-5 mr-10"
-        >
-          <p class="active:text-blue-400 font-semibold text-xl">
-            Work Load
-          </p>
-          <p
-            class="text-center mt-6 mb-10 text-black-400 font-regular"
-            style="max-width: 284px"
-          >
-            Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
-            is. Yet preference connection unpleasant yet melancholy but end appearance.
-          </p>
-          <button class="underline">
-            Learn more
-          </button>
-        </div>
-        <div
-          class="active:bg-white-400 hover:bg-white-400 border border-grey-450 flex justify-center items-center flex-col py-12 px-5 mr-10"
-        >
-          <p class="active:text-blue-400">
-            Work Load
-          </p>
-          <p
-            class="text-center mt-6 mb-10"
-            style="max-width: 284px"
-          >
-            Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
-            is. Yet preference connection unpleasant yet melancholy but end appearance.
-          </p>
-          <button>Learn more</button>
-        </div>
-        <div
-          class="active:bg-white-400 hover:bg-white-400 border border-grey-450 flex justify-center items-center flex-col py-12 px-5 mr-10"
-        >
-          <p class="active:text-blue-400">
-            Work Load
-          </p>
-          <p
-            class="text-center mt-6 mb-10"
-            style="max-width: 284px"
-          >
-            Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
-            is. Yet preference connection unpleasant yet melancholy but end appearance.
-          </p>
-          <button>Learn more</button>
+      <div class="flex" />
+      <div class="splide mb-20">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div
+              class="splide__slide active:bg-white-400 hover:bg-white-400 hover:text-blue-400 hover:shadow-sm hover:border-opacity-0 border border-grey-450 flex justify-center items-center flex-col py-12 px-5"
+            >
+              <p class="active:text-blue-400 font-semibold text-xl">
+                Work Load
+              </p>
+              <p
+                class="text-center mt-6 mb-10 text-black-400 font-regular"
+                style="max-width: 284px"
+              >
+                Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
+                is. Yet preference connection unpleasant yet melancholy but end appearance.
+              </p>
+              <button class="underline">
+                Learn more
+              </button>
+            </div>
+            <div
+              class="splide__slide active:bg-white-400 hover:bg-white-400 hover:text-blue-400 hover:shadow-sm hover:border-opacity-0 border border-grey-450 flex justify-center items-center flex-col py-12 px-5"
+            >
+              <p class="active:text-blue-400 font-semibold text-xl">
+                Work Load
+              </p>
+              <p
+                class="text-center mt-6 mb-10 text-black-400 font-regular"
+                style="max-width: 284px"
+              >
+                Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
+                is. Yet preference connection unpleasant yet melancholy but end appearance.
+              </p>
+              <button class="underline">
+                Learn more
+              </button>
+            </div>
+            <div
+              class="splide__slide active:bg-white-400 hover:bg-white-400 hover:text-blue-400 hover:shadow-sm hover:border-opacity-0 border border-grey-450 flex justify-center items-center flex-col py-12 px-5"
+            >
+              <p class="active:text-blue-400 font-semibold text-xl">
+                Work Load
+              </p>
+              <p
+                class="text-center mt-6 mb-10 text-black-400 font-regular"
+                style="max-width: 284px"
+              >
+                Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression
+                is. Yet preference connection unpleasant yet melancholy but end appearance.
+              </p>
+              <button class="underline">
+                Learn more
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="flex m-auto border border-blue-400 py-4 px-16 text-blue-400 hover:text-white-400 hover:bg-blue-400">
+        Explore All
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import Splide from "@splidejs/splide";
+
 export default {
-  name: "Features"
+  name: "Features",
+  data() {
+    return {};
+  },
+  mounted() {
+    new Splide(".splide", {
+      perPage: 3,
+      arrows: false,
+      autoplay: false,
+      pagination: false,
+      interval: 1200,
+      rewind: true,
+      speed: 1000,
+      gap: '2em'
+    }).mount();
+  }
 };
 </script>
 

@@ -35,7 +35,10 @@ module.exports = {
       green: {
         300: '#45EC9C'
       }
-    }
+    },
+    boxShadow: {
+      sm: '0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);',
+    },
   },
   corePlugins: {
     container: false
