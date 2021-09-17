@@ -6,8 +6,9 @@ import Services from "./components/services.vue";
 import Features from "./components/features.vue";
 import Clients from "./components/clients.vue";
 import Pricing from "./components/pricing.vue";
+import Faq from "./components/faq.vue";
 export default {
-  components: { Pricing, Clients, Features, Services, Partners, Items, Header }
+  components: { Faq, Pricing, Clients, Features, Services, Partners, Items, Header }
 };
 </script>
 
@@ -19,4 +20,5 @@ export default {
   <features />
   <clients />
   <pricing />
+  <faq />
 </template>

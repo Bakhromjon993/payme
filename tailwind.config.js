@@ -2,7 +2,14 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'animation-own': 'spin 0.5s linear'
+      },
+      transitionProperty: {
+        'height': ''
+      }
+    },
     fontSize: {
       sm: ['1px', '20px'],
       base: ['16px', '24px'],
@@ -38,7 +45,9 @@ module.exports = {
     },
     boxShadow: {
       sm: '0px 38.5185px 25.4815px rgba(49, 49, 49, 0.0607407), 0px 20px 13px rgba(49, 49, 49, 0.05), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);',
+      md: '0px 20px 95px rgba(201, 203, 204, 0.3)'
     },
+
   },
   corePlugins: {
     container: false
