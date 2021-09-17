@@ -18,12 +18,14 @@
         <div class="container py-5">
           <div class="row py-4 flex justify-between">
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <img
-                src="../assets/icons/Payme.svg"
-                alt=""
-                width="180"
-                class="mb-3"
-              >
+              <a href="#">
+                <img
+                  src="../assets/icons/Payme.svg"
+                  alt=""
+                  width="180"
+                  class="mb-3 cursor-pointer"
+                >
+              </a>
               <p class="font-italic text-muted">
                 Crechterwoord K12 182 DK <br>
                 Alknjkcb, All Rights Reserved
