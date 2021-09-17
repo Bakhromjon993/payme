@@ -6,9 +6,6 @@ module.exports = {
       animation: {
         'animation-own': 'spin 0.5s linear'
       },
-      transitionProperty: {
-        'height': ''
-      }
     },
     fontSize: {
       sm: ['1px', '20px'],
@@ -31,7 +28,8 @@ module.exports = {
         400: '#25A4AD'
       },
       black: {
-        400: '#313131'
+        400: '#313131',
+        500: '#2C2C2C'
       },
       yellow: {
         400: '#FFC229'
