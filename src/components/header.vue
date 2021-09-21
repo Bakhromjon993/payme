@@ -62,12 +62,15 @@
         Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.
       </div>
       <div>
-        <button class="py-4 px-10 bg-blue-400 text-white-400 mr-5 hover:bg-white-400 hover:text-blue-400 hover:border-blue-400 border hover:border-opacity-100">
+        <Vbutton
+          class="mr-4"
+          solid
+        >
           Get Started
-        </button>
-        <button class="py-4 px-10 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white-400">
+        </Vbutton>
+        <Vbutton>
           Explore
-        </button>
+        </Vbutton>
       </div>
     </div>
     <div class="flex-grow ml-3">
@@ -87,8 +90,10 @@
 </template>
 
 <script>
+import Vbutton from "./Vbutton.vue";
 export default {
-  name: "Header"
+  name: "Header",
+  components: { Vbutton }
 };
 </script>
 

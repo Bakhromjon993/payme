@@ -4,9 +4,9 @@
       <div class="mb-28 text-2xl text-center">
         <span class="font-thin">Our</span> <span class="font-semibold text-blue-400">Pricing Plan</span>
       </div>
-      <div class="flex">
+      <div class="flex justify-center">
         <div
-          class="bg-white-400 border border-grey-450 py-14 px-11 text-center hover:text-blue-400 hover:border-opacity-0 hover:shadow-sm transform duration-700 ease-in-out hover:-translate-y-12"
+          class="card"
         >
           <p
             class="font-semibold mb-4"
@@ -97,12 +97,12 @@
               <span>Feedback Categorization</span>
             </li>
           </ul>
-          <button class="py-4 px-14 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white-400">
+          <vbutton>
             Request Demo
-          </button>
+          </vbutton>
         </div>
         <div
-          class="bg-white-400 border border-grey-450 py-14 px-11 mx-11 relative text-center hover:text-blue-400 hover:border-opacity-0 hover:shadow-sm transform duration-700 ease-in-out hover:-translate-y-12"
+          class="card mx-11"
         >
           <p
             class="font-semibold mb-4 "
@@ -193,12 +193,12 @@
               <span>Feedback Categorization</span>
             </li>
           </ul>
-          <button class="py-4 px-14 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white-400">
+          <vbutton>
             Request Demo
-          </button>
+          </vbutton>
         </div>
         <div
-          class="bg-white-400 border border-grey-450 py-14 px-11 text-center hover:text-blue-400 hover:border-opacity-0 hover:shadow-sm transform duration-700 ease-in-out hover:-translate-y-12"
+          class="card"
         >
           <p
             class="font-semibold mb-4"
@@ -289,9 +289,9 @@
               <span>Feedback Categorization</span>
             </li>
           </ul>
-          <button class="py-4 px-14 border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white-400">
+          <vbutton>
             Request Demo
-          </button>
+          </vbutton>
         </div>
       </div>
     </div>
@@ -299,11 +299,15 @@
 </template>
 
 <script>
+import Vbutton from "./Vbutton.vue";
 export default {
-  name: "Pricing"
+  name: "Pricing",
+  components: { Vbutton }
 };
 </script>
 
 <style scoped>
-
+.card{
+  @apply bg-white-400 border border-grey-450 py-14 px-11 text-center hover:text-blue-400 hover:border-opacity-0 hover:shadow-sm transform duration-700 ease-in-out hover:-translate-y-12
+}
 </style>

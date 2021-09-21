@@ -1,5 +1,21 @@
 <template>
-  <div class="bg-black-500">
+  <div class="bg-black-550 relative overflow-hidden">
+    <div
+      class="absolute -top-11 -left-52 w-0 h-0"
+      style="border: 300px solid transparent; border-top: 0; border-bottom: 300px solid #2C2C2C; transform: rotate(-45deg)"
+    />
+    <div
+      class="absolute -top-11 -right-48 w-0 h-0"
+      style="border: 300px solid transparent; border-top: 0; border-bottom: 300px solid #2C2C2C; transform: rotate(45deg)"
+    />
+    <div
+      class="absolute -bottom-11 -left-52 w-0 h-0"
+      style="border: 300px solid transparent; border-top: 0; border-bottom: 300px solid #2C2C2C; transform: rotate(-135deg)"
+    />
+    <div
+      class="absolute -bottom-11 -right-48 w-0 h-0"
+      style="border: 300px solid transparent; border-top: 0; border-bottom: 300px solid #2C2C2C; transform: rotate(135deg)"
+    />
     <div class="container flex items-center justify-center flex-col">
       <p
         class="font-semibold text-white-400 text-center mb-20"
@@ -8,12 +24,12 @@
         People who are <br>
         ready took these courses!
       </p>
-      <button
-        class="border border-white-400 py-4 px-10 text-white-400 hover:bg-white-400 hover:text-black-400"
+      <vbutton
+        color="white"
         style="margin-bottom: 182px"
       >
         Schedule demo
-      </button>
+      </vbutton>
       <footer class="text-white-400 w-full">
         <div class="container py-5">
           <div class="row py-4 flex justify-between">
@@ -175,8 +191,10 @@
 </template>
 
 <script>
+import Vbutton from "./Vbutton.vue";
 export default {
-  name: "Foot"
+  name: "Foot",
+  components: { Vbutton }
 };
 </script>
 

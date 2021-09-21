@@ -71,9 +71,9 @@
           </div>
         </div>
       </div>
-      <button class="flex m-auto border border-blue-400 py-4 px-16 text-blue-400 hover:text-white-400 hover:bg-blue-400">
-        Explore All
-      </button>
+      <div class="flex justify-center">
+        <vbutton>Explore All</vbutton>
+      </div>
     </div>
   </div>
 </template>
@@ -81,9 +81,11 @@
 <script>
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import Splide from "@splidejs/splide";
+import Vbutton from "./Vbutton.vue";
 
 export default {
   name: "Features",
+  components: { Vbutton },
   data() {
     return {};
   },
